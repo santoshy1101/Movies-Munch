@@ -1,5 +1,6 @@
 // CSS
 @import "../../mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 .header {
   position: fixed;
@@ -30,8 +31,21 @@
   }
   .logo {
     cursor: pointer;
+    display: flex;
+    color: white;
+    align-items: center;
+    column-gap: 0.5rem;
     img {
       height: 50px;
+    }
+    h2 {
+      font-family: Great Vibes;
+      font-size: 32px;
+      font-weight: 900;
+      display: none;
+      @include sm {
+        display: block;
+      }
     }
   }
   .menuItems {

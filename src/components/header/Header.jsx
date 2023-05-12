@@ -76,6 +76,7 @@ const Header = () => {
       <ContentWrapper>
         <div className="logo" onClick={() => navigate(`/`)}>
           <img src={logo} alt="" />
+          <h2>Movies Munch</h2>
         </div>
         <ul className="menuItems">
           <li className="menuItem" onClick={() => navigationHandler('movie')}>
